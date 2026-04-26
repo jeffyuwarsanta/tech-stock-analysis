@@ -134,7 +134,7 @@ A beginner investor can use this tool in four ways:
 A stock with high growth may also have high risk, so investors should not only look at price increase.
 """)
 
-st.subhead("Key Insights")
+st.subheader("Key Insights")
 
 st.write("""
 - Nvidia shows high growth but also high volatility.
