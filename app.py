@@ -19,6 +19,16 @@ The tool helps beginners compare stocks using four ideas:
 4. Downside risk
 """)
 
+st.subheader("How to Use This Tool")
+
+st.write("""
+1. Select stocks using the sidebar.
+2. Look at growth to understand long-term performance.
+3. Use risk vs return to compare volatility.
+3. Check consistency to see reliability.
+5. Review downside risk to understand possible losses.
+""")
+
 df = pd.read_csv("tech_stock_alltime.csv")
 df["date"] = pd.to_datetime(df["date"])
 
@@ -123,3 +133,15 @@ A beginner investor can use this tool in four ways:
 
 A stock with high growth may also have high risk, so investors should not only look at price increase.
 """)
+
+st.subhead("Key Insights")
+
+st.write("""
+- Nvidia shows high growth but also high volatility.
+- Microsoft appears more stable with lower risk.
+- Apple provides a balanced performance between growth and risk.
+- Google sits between stability and growth.
+
+This shows that higher return often comes with higher risk.
+""")
+
